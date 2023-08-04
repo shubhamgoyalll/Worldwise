@@ -10,6 +10,8 @@ import Login from "./pages/Login";
 import CityList from "./components/CityList";
 import CountryList from "./components/CountryList";
 import City from "./components/City";
+import Form from "./components/Form";
+import { Navigate } from "react-router-dom";
 
 const BASE_URL = "http://localhost:8000";
 
@@ -42,10 +44,7 @@ function App() {
         <Route path="pricing" element={<Pricing />} />
         <Route path="app" element={<AppLayout />}>
           {/*We have used nested routes and an index route here. Now to use these we use <Outlet/> wherever we want these. And if none of these matches then index route JSX will be shown*/}
-          <Route
-            index
-            element={<CityList cities={cities} isLoading={isLoading} />}
-          />
+          <Route index element={<Navigate replace to="cities" />} />
           <Route
             path="cities"
             element={<CityList cities={cities} isLoading={isLoading} />}
@@ -55,7 +54,7 @@ function App() {
             path="countries"
             element={<CountryList cities={cities} isLoading={isLoading} />}
           />
-          <Route path="form" element={<p>Form</p>} />
+          <Route path="form" element={<Form />} />
         </Route>
         <Route path="login" element={<Login />} />
         <Route path="*" element={<PageNotFound />} />
