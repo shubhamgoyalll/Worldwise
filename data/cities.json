@@ -49,52 +49,16 @@
       "id": 98443198
     },
     {
-      "cityName": "Peixoto de Azevedo",
+      "cityName": "Feliz Natal",
       "country": "Brazil",
       "emoji": "🇧🇷",
-      "date": "2023-08-15T19:55:05.853Z",
-      "notes": "dfdfdfdf",
-      "position": {
-        "lat": "-10.645119106211608",
-        "lng": "-53.26171875"
-      },
-      "id": 98443199
-    },
-    {
-      "cityName": "Peixoto de Azevedo",
-      "country": "Brazil",
-      "emoji": "🇧🇷",
-      "date": "2023-08-15T19:55:05.853Z",
-      "notes": "dfdfdfdf",
-      "position": {
-        "lat": "-10.645119106211608",
-        "lng": "-53.26171875"
-      },
-      "id": 98443200
-    },
-    {
-      "cityName": "Porta",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2023-08-15T20:02:53.908Z",
-      "notes": "s",
-      "position": {
-        "lat": "42.50537771272169",
-        "lng": "1.77978515625"
-      },
-      "id": 98443201
-    },
-    {
-      "cityName": "Bordj Omar Driss",
-      "country": "Algeria",
-      "emoji": "🇩🇿",
-      "date": "2023-08-15T20:03:05.732Z",
+      "date": "2023-08-16T19:28:46.354Z",
       "notes": "",
       "position": {
-        "lat": "28.546933609089926",
-        "lng": "8.525390625000002"
+        "lat": "-12.2944236334936",
+        "lng": "-54.88769531250001"
       },
-      "id": 98443202
+      "id": 98443199
     }
   ]
 }
