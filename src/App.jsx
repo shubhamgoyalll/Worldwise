@@ -13,6 +13,7 @@ import Form from "./components/Form";
 import { Navigate } from "react-router-dom";
 import { CitiesProvider } from "./contexts/CitiesContext";
 import { AuthProvider } from "./contexts/FakeAuthContext";
+import ProtectedRoute from "./pages/ProtectedRoute";
 
 function App() {
   return (
@@ -24,7 +25,14 @@ function App() {
             <Route index element={<Homepage />} />
             <Route path="product" element={<Product />} />
             <Route path="pricing" element={<Pricing />} />
-            <Route path="app" element={<AppLayout />}>
+            <Route
+              path="app"
+              element={
+                <ProtectedRoute>
+                  <AppLayout />
+                </ProtectedRoute>
+              }
+            >
               {/*We have used nested routes and an index route here. Now to use these we use <Outlet/> wherever we want these. And if none of these matches then index route JSX will be shown*/}
               <Route index element={<Navigate replace to="cities" />} />
               <Route path="cities" element={<CityList />} />
